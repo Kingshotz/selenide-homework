@@ -116,5 +116,6 @@ public class test {
 
         individualOffers.get(basicIndex).$(Constants.PURCHASE_PRICE_SELECTOR).shouldHave(text(Constants.PRICE_749));
         individualOffers.get(uiIndex).$(Constants.PURCHASE_PRICE_SELECTOR).shouldHave(text(Constants.PRICE_899));
+        String conflict= " i am fix";
     }
 }
