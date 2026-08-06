@@ -43,7 +43,6 @@ public class Constants {
     BULLET = "●",
             REPORT_SERVER_USERS = "1 instance with 15 users",
 
-    XPATH_CONTAINS_SPAN = "//span[contains(., '%s')]",
 
     KENDOREACT_FREE = "KendoReact Free",
             KENDOREACT = "KendoReact",
@@ -53,12 +52,10 @@ public class Constants {
             PRICE_749 = "749",
             PRICE_899 = "899",
 
-    BASE_URL = "http://automationexercise.com",
+    AUTOMATION_EXERCISE_URL = "http://automationexercise.com",
             USER_NAME = "Test User",
 
-
-     HOME_PAGE_MARKER = "",
-            SIGNUP_LOGIN_BTN = "//a[contains(text(), 'Signup / Login')]",
+     SIGNUP_LOGIN_BTN = "//a[contains(text(), 'Signup / Login')]",
 
      NEW_USER_SIGNUP_HEADER = "//h2[text() = 'New User Signup!']",
             SIGNUP_NAME_INPUT = "[data-qa='signup-name']",
@@ -91,7 +88,6 @@ public class Constants {
             LOGGED_IN_SELECTOR = "//a[contains(normalize-space(.), 'Logged in as')]",
     //adblocker
     ADBLOCKER_CRX = "LGBLNFIDAHCDCJDDIEPKCKCFDHPKNNJH_2_1_61_0.crx";
-    ;
 
     public static final int PACKAGE_COUNT = 3;
     public static final String BASE_URL = "https://www.telerik.com/support/demos",
@@ -103,7 +99,6 @@ public class Constants {
             SCROLL_TO_START = "{block: 'start'}",
             DEVCRAFT_PRODUCTS_PAGE = "https://www.telerik.com/purchase.aspx?filter=web",
     // Selectors
-      PURCHASE_CELL_SELECTOR = ".Purchase-cell",
       SECTION_HEADERS_SELECTOR = ".u-mb0.h3",
       APP_STORE_LINKS_SELECTOR = "a.u-dib",
 
@@ -135,5 +130,4 @@ public class Constants {
       GET_COMPUTED_POSITION_SCRIPT = "return window.getComputedStyle(arguments[0]).position;",
      SCROLL_BY_SCRIPT = "window.scrollBy(%d,%d);";
 
-                    ;
 }
