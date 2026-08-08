@@ -32,9 +32,8 @@ public class BaseTest {
         options.addExtensions(ExtensionUtil.extractExtension(ADBLOCKER_CRX));
         driver = new ChromeDriver(options);
         WebDriverRunner.setWebDriver(driver);
-        Configuration.browserSize = "1920x1080";
+        Configuration.holdBrowserOpen = true;
         driver.manage().window().maximize();
-//        Configuration.holdBrowserOpen = true;
     }
 
     @AfterClass
