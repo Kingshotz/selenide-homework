@@ -48,7 +48,7 @@ public class AutomationExerciseTest {
         signupSteps = new SignupSteps();
         accountInfoSteps = new AccountInfoSteps();
         accountCreatedSteps = new AccountCreatedSteps();
-        open(Constants.BASE_URL);
+        open(Constants.AUTOMATION_EXERCISE_URL);
     }
     @Test
     public void registerUserTest() {

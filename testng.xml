@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TBC QA Automation Suite" parallel="tests" thread-count="2">
+
+    <!-- ==========================================================
+    <test name="CheckoutFlowIncludeExclude">
+        <classes>
+            <class name="ge.tbc.testautomation.tests.CheckoutFlowTest">
+                <methods>
+                    <include name="addToCartTest"/>
+                    <include name="proceedToCheckoutTest"/>
+                    <include name="makePaymentTest"/>
+                </methods>
+            </class>
+            <class name="ge.tbc.testautomation.tests.PriorityOrderTest">
+                <methods>
+                    <exclude name="validateImageSizes"/>
+                    <exclude name="sortOffers"/>
+                    <exclude name="validateBurgerMenu"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    ===============================END OF Step 4=========================== -->
+
+
+    <test name="ChromeTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="ge.tbc.testautomation.tests.CheckoutFlowTest"/>
+            <class name="ge.tbc.testautomation.tests.PriorityOrderTest"/>
+        </classes>
+    </test>
+
+    <test name="FirefoxTests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="ge.tbc.testautomation.tests.CheckoutFlowTest"/>
+            <class name="ge.tbc.testautomation.tests.PriorityOrderTest"/>
+        </classes>
+    </test>
+
+</suite>
